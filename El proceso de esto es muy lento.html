@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression using Quadtree</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Compression using Quadtree</h1>
+    <input type="file" id="imageInput">
+    <br>
+    <label for="thresholdInput">Threshold:</label>
+    <input type="range" id="thresholdInput" min="0" max="100" value="30">
+    <span id="thresholdValue">30</span>
+    <br>
+    <button id="compressButton">Compress Image</button>
+    <button id="decompressButton">Decompress Image</button>
+    <button id="saveButton">Save Compressed Image</button>
+    <br>
+    <canvas id="originalCanvas"></canvas>
+    <canvas id="compressedCanvas"></canvas>
+    <canvas id="decompressedCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
